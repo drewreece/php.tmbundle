@@ -12,12 +12,12 @@
 		<string>(?x)^(.*\*/)?
     \s*
     (
-        [\}\)]|
-        ((end(if|for(each)?|while));)
+        [\}\)](,?)|
+        ((end(if|for(each)?|while)|break);)
     )
     [;\s]*$</string>
 		<key>increaseIndentPattern</key>
-		<string>((\([^\)"']*)|(\{[^\}"']*)|(((else)?if|else|for(each)?|while|switch|case).*?:))\s*$</string>
+		<string>((\([^\)"']*)|(\{[^\}"']*)|(((else)?if|else|for(each)?|while|switch|case|default).*?:))\s*$</string>
 		<key>unIndentedLinePattern</key>
 		<string>^\s*$</string>
 	</dict>
